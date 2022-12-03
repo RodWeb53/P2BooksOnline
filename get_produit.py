@@ -34,17 +34,25 @@ def produit(url):
 
 
         titre = soup.find('h1').text
-        description = soup.find('p', {'class': ''}).text
+        
+        """Boucle pour récupérer les commentaires et s'il n'y a pas de commentaire 
+        on récupère un champ vide"""
+        description = []
+        recup_description = soup.find_all('p', class_ ='')
+        for decrip in recup_description:
+            description.append(decrip)
+        
+        
 
 
         print('poduct_page_url = ' + url + '\n\n' + 'universal_ product_code (upc) = ' + upc + '\n\n' + 'title = ' + titre + '\n\n'
         + 'price_including_tax = ' + prix_ttc + '\n\n' + 'price_excluding_tax = ' + prix_ht + '\n\n' + 'number_available = ' + quantite_disponible
-        + '\n\n' + 'product_description = ' + description + '\n\n' + 'category = ' + categorie + '\n\n' + 'review_rating = ' + version
+        + '\n\n' + 'product_description = ' + str(description) + '\n\n' + 'category = ' + categorie + '\n\n' + 'review_rating = ' + version
         + '\n\n' + 'image_url = ' + image)
 
     else:
-            print("Les arguments de l'url ne sont pas conforme produit")    
-
+            print("Les arguments de l'url ne sont pas conforme produit")      
+     
 if __name__ == "__main__":
 
      
@@ -54,5 +62,3 @@ if __name__ == "__main__":
     """!!! il reste le transfert vers un fichier csv à faire !!!""" 
 else:
     print('sortie du main')
-
-
