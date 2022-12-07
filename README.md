@@ -2,7 +2,7 @@
 
 ## Cette application va permettre de scraper Book To Scrape afin de suivre les prix et les stocks dans le temps.
 
-** Fonctionnalités ** 
+**Fonctionnalités** 
 
 - Extraires les données et les enregistrer au format .csv
 
@@ -24,7 +24,7 @@
 
 ## Mise en place du programme
 
-    **Pré-requis : python 3 doit être installé sur votre machine**
+    `Pré-requis : python 3 doit être installé sur votre machine`
 
 - Télécharger ce code dans ''code'' > ''Download ZIP''
 - Décompresser le dossier
@@ -35,17 +35,17 @@
 
     Tapez la commande suivante pour créer l'environnement virtuel
 
-        *python -m venv env*
+        `python -m venv env`
 
 ### 2. Lancement de l'environnement virtuel
 
     Sous Windows tapez la commande suivante :
 
-        *env\Scripts\activate.bat*
+        `env\Scripts\activate.bat`
 
     Sous MAC ou Linux tapez la commande suivante :
 
-        *source env/bin/activate*
+        `source env/bin/activate`
 
 ### 3. Installation des packages
 
@@ -53,26 +53,26 @@
 
     Tapez la commande suivante pour installer les packages :
 
-        *pip install -r requirements.txt*
+        `pip install -r requirements.txt`
 
     Si vous voulez vérifier que les packages sont bien installés tapez la commande suivante :
 
-        *pip freeze*
+        `pip freeze`
 
 
 ## Lancement des programmes
 
     Pour l'extraction d'un livre taper la commande suivante :
 
-        *python get_produit.py*
+        `python get_produit.py`
 
     Pour l'extraction d'une catégorie taper la commande suivante :
 
-        *python get_categorie.py*
+        `python get_categorie.py`
 
     Pour l'extraction de toutes les catégories taper la commande suivante :
 
-        *python main.py* 
+        `python main.py`
 
 
 
