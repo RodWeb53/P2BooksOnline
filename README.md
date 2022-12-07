@@ -31,48 +31,48 @@
 
 ### 1. Création de l'environnement virtuel
 
-    Ouvrez le terminal, allez dans le dossier que vous avez téléchargé
+Ouvrez le terminal, allez dans le dossier que vous avez téléchargé
 
-    Tapez la commande suivante pour créer l'environnement virtuel
+Tapez la commande suivante pour créer l'environnement virtuel
 
-`python -m venv env`
+    python -m venv env
 
 ### 2. Lancement de l'environnement virtuel
 
-    Sous Windows tapez la commande suivante :
+Sous Windows tapez la commande suivante :
 
-`env\Scripts\activate.bat`
+    env\Scripts\activate.bat
 
-    Sous MAC ou Linux tapez la commande suivante :
+Sous MAC ou Linux tapez la commande suivante :
 
-`source env/bin/activate`
+    source env/bin/activate
 
 ### 3. Installation des packages
 
-    Les packages vont permettre le bon fonctionnement du programme
+Les packages vont permettre le bon fonctionnement du programme
 
-    Tapez la commande suivante pour installer les packages :
+Tapez la commande suivante pour installer les packages :
 
-`pip install -r requirements.txt`
+    pip install -r requirements.txt
 
-    Si vous voulez vérifier que les packages sont bien installés tapez la commande suivante :
+Si vous voulez vérifier que les packages sont bien installés tapez la commande suivante :
 
-`pip freeze`
+    pip freeze
 
 
 ## Lancement des programmes
 
-    Pour l'extraction d'un livre taper la commande suivante :
+Pour l'extraction d'un livre taper la commande suivante :
 
-`python get_produit.py`
+    python get_produit.py
 
-    Pour l'extraction d'une catégorie taper la commande suivante :
+Pour l'extraction d'une catégorie taper la commande suivante :
 
-`python get_categorie.py`
+    python get_categorie.py
 
-    Pour l'extraction de toutes les catégories taper la commande suivante :
+Pour l'extraction de toutes les catégories taper la commande suivante :
 
-`python main.py`
+    python main.py
 
 
 
