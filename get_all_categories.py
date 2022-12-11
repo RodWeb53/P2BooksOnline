@@ -26,13 +26,13 @@ def categorie_all():
             if 'category/books/' in categorie_livre:
                 lien_livre = categorie_livre.split('/',3)
                 categories.append(lien_livre[2])
-            print('les categories sont  ' + str(categories) + '\n\n')
+
 
 
     else:
         print("Les arguments de l'url ne sont pas conforme dans la page principale")
 
-    print('liste des liens ' + str(categories) + ' \n\n')
+
 
     return categories
 
